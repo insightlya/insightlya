@@ -8,7 +8,7 @@ export default function Home() {
           Isi survei singkat dan dapatkan <strong>pulsa</strong> atau <strong>e-money</strong>!
         </p>
         <a
-          href="https://forms.gle/xyz123" // GANTI DENGAN LINK FORM ASLI
+          href="https://forms.gle/nDiSkA9VJmhQoogM6" // GANTI DENGAN LINK FORM ASLI
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition"
