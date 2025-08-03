@@ -1,14 +1,31 @@
-// pages/index.tsx
-import Link from "next/link";
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center text-center p-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
-      <h1 className="text-4xl font-bold mb-4">Selamat Datang di Insightlya</h1>
-      <p className="mb-6">Isi survei singkat dan dapatkan pulsa atau e-money!</p>
-      <Link href="/survey">
-        <a className="bg-white text-blue-600 px-6 py-3 rounded font-semibold hover:bg-gray-100">Mulai Survei</a>
-      </Link>
+    <div className={styles.container}>
+      <Head>
+        <title>Insightlya Survey</title>
+      </Head>
+
+      <main className={styles.main}>
+        <Image src="/logo.png" alt="Logo Insightlya" width={150} height={150} />
+
+        <h1 className={styles.title}>Selamat Datang di Insightlya!</h1>
+        <p className={styles.description}>
+          Isi survei singkat & dapatkan pulsa atau e-money 🎁
+        </p>
+
+        <a
+          href="https://forms.gle/e8G9WzhkD1DTaJ9t5"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.button}
+        >
+          Mulai Survei
+        </a>
+      </main>
     </div>
   );
 }
